@@ -1,0 +1,256 @@
+
+/*---------------- Default styles---------------- */
+* {
+    margin: auto;
+    outline: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    vertical-align: baseline;
+}
+
+html {
+    font-size: 75%;
+}
+
+@media (max-device-width: 450px) {
+
+
+
+    header {
+        width: auto !important;
+        text-align: left!important;
+        background-size: 200% 100%
+    }
+
+    #pet {
+        width: 60%;
+        padding-top: 10%;
+    }
+
+#nav ul {
+    font-size: 2rem;
+
+}
+
+    article {
+        width: 100% !important;
+        margin-top: 0%;
+        margin-bottom: 5%;
+        text-align: left;
+    }
+#nav ul li {
+        text-align: left !important;
+}
+
+}
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 120%;
+    background-color: #f7f7f7;
+    width: 100%;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+/*----------------Header Styles----------------*/
+header {
+    width: 80%;
+    text-align: center;
+}
+
+header img {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+
+
+@charset "utf-8";
+/*------------------SUB MENU STYLE-----------------*/
+#wrapper {
+    width: 100%;
+    margin: 20% auto;
+
+}
+
+#nav ul {
+    background-color: #ffd800;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    
+        /* make the background-color fade in on roll-over */
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+#nav li {
+    
+        /* make the background-color fade in on roll-over */
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+#nav ul li {
+    display: inline-block;
+    text-align: left;
+
+}
+
+#nav ul li:hover {
+    background-color: #6FC4D5;
+    /*Borders*/
+    border-radius: 5%;
+    -moz-border-radius: 5%;
+    -webkit-border-radius: 5%;
+    border: 0px solid #000;
+}
+
+#nav ul li a, visited {
+    display: block;
+    padding: 15px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#nav ul li:hover > ul {
+    display: block;
+}
+
+
+/*Sub Menu Styles*/
+#nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #e8e4e4;
+    min-width: fill-available;
+
+}
+
+#nav ul ul li {
+    display: block;
+}
+
+#nav ul ul li a {
+    padding: 7px; /*control size of submenu box*/
+}
+#nav ul ul li:hover {
+    background-color: #6FC4D5;
+}
+
+#nav ul li:hover ul li a, visited {
+    color: Black;
+    font-weight: 500;
+}
+
+#nav ul ul li:hover > ul {
+    display: block;
+}
+/*Sub Sub Menu Styles*/
+#nav ul ul ul {
+    margin-top: -22%;
+    width: 100%;
+    margin-left: 100%;
+    background-color: #e8e4e4;
+}
+/* Dropdown Menu Arrow */
+#nav ul li > a:after {
+    color: #000;
+    font-style: normal;
+    content: '▾';
+}
+
+#nav ul li > a:hover:after {
+    color: #444;
+    content: '▸';
+}
+
+#nav ul li > a:only-child:after {
+    content: ' ';
+}
+
+#nav ul li ul li > a:after {
+    color: #000;
+    font-style: normal;
+    content: '▸';
+}
+
+#nav ul li ul li > a:hover:after {
+    color: #444;
+    content: '▾';
+}
+
+#nav ul li ul li > a:only-child:after {
+    content: ' ';
+}
+
+
+/*  ie7 gap fix */
+.ie7 .navigation ul ul li {
+    margin-bottom: -3px;
+}
+/*dotted Line around Sub Menu Boxes*/
+  /*  #nav ul ul li a{
+        border-top:1px dotted #999;
+    }
+    #nav ul ul li:hover + a{
+        border-top:1px solid #eaeaea;
+    }
+    /*
+/*----------------Article Style----------------*/
+article {
+    width: 80%;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    text-align: center;
+
+}
+
+
+article h1 {
+    margin-top: 5%;
+    font-size: 140%;
+    text-align: center;
+}
+
+article p {
+    width: auto;
+    text-align: left;
+    font-size: 120%;
+    margin: 3% 0%;
+    padding: 0% 10% 0% 10%;
+}
+
+
+article p img {
+    margin: 1% 5%;
+    padding-left: 19.5%;
+    padding-right: 19.5%;
+    width: 50%;
+}
+
+
+
+/*----------------PDF File view----------------*/
+
+object {
+    padding-top: 5%;
+    width: 60%;
+    height: 1070px;
+}
+
+
+/*Email hierarchy PDF Page Format*/
+#pdfsideview embed {  
+    width: 980px;
+    height: 750px;
+}
